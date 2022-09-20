@@ -1,16 +1,16 @@
-
-Ruta http://localhost:8080    se muestra el formulario para poder registrarse
-Ruta http://localhost:8080/api/registerUser    muestra todos los usuarios registrados
-
+Hola Carlos
+Ruta http://localhost:8080    se muestra el formulario para poder registrarse.
+Si quiere registrarse sin algun dato el formulario no se lo permite. Si se registra dos veces
+lo manda a la ruta http://localhost:8080/registerfail que le informa que no se pudo resgistrar y tiene el boton para volver.
+Si esta todo bien lo manda directamente al formulario para que ingrese
 
 Ruta http://localhost:8080/login   se muestra la vista para el ingreso del usuario
 registrado, haciendo clic en el boton "ingresar" lo manda a la ruta:
-http://localhost:8080/api/current   por defecto le pide que acceda primero pero si refresca 
-la pagina y si ingreso bien los datos le da la bienvenida con su email.
+http://localhost:8080/welcome  si ingreso bien los datos lo saluda con su nombre. Si no se registro o pone mal sus datos
+lo manda a la ruta http://localhost:8080/loginfail.
 
-Haciendo click en el link de "cerrar sesion" lo manda a la ruta: 
-http://localhost:8080/api/logout   que muestra que esta desconectado, y se destruye la 
-sesion que se guardo en mongoAtlas.
+Haciendo click en el boton "cerrar sesion" cierra la sesion y lo manda de nuevo para registrarse a la ruta
+http://localhost:8080/ 
 
 
  
